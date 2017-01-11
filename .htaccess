@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^update/([0-9]+) ?do=update&id=$1
+RewriteRule ^update ?do=update
+RewriteRule ^delete/([0-9]+) ?do=delete&id=$1
+RewriteRule ^add ?do=add
+
+
