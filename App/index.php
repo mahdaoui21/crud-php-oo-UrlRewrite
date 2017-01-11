@@ -10,7 +10,7 @@
             <br/>
             <div class="row">
                 <?php $formaction = $update ? 'update' : 'add'; ?>
-                <form action="/<?=basename(__DIR__).'/'.$formaction; ?>" method="post" class="form-horizontal">
+                <form action="<?=dirname($_SERVER['PHP_SELF']).'/'.$formaction; ?>" method="post" class="form-horizontal">
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
                         <div class="col-sm-3">
@@ -52,8 +52,8 @@
                             <td><?=$user->username ?></td>
                             <td><?=$user->password ?></td>
                             <td>
-                                <a class="btn btn-danger" href="/<?=basename(__DIR__) ?>/delete/<?=$user->id ?>">Supprimer</a>
-                                <a class="btn btn-success" href="/<?=basename(__DIR__) ?>/update/<?=$user->id ?>">Modifier</a>
+                                <a class="btn btn-danger" href="<?=dirname($_SERVER['PHP_SELF']) ?>/delete/<?=$user->id ?>">Supprimer</a>
+                                <a class="btn btn-success" href="<?=dirname($_SERVER['PHP_SELF']) ?>/update/<?=$user->id ?>">Modifier</a>
                             </td>
                         </tr>
                     <?php } ?>

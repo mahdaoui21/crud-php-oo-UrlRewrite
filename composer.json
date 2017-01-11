@@ -1,0 +1,16 @@
+{
+    "name": "abdessamad/phpsid",
+    "authors": [
+        {
+            "name": "Mahdaoui Abdessamad",
+            "email": "mahdaoui21@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload":{
+        "psr-4":{
+            "sid\\": "App/sid"
+        }
+    }
+}

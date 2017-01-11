@@ -6,13 +6,13 @@
  * Time: 16:42
  */
 
-
-
+namespace sid\UserManager;
+USE PDO;
 
 class UserManager {
 
     private $PDO;
-    function __construct(\PDO $PDO){
+    function __construct(PDO $PDO){
         $this->PDO=$PDO;
     }
 

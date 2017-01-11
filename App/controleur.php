@@ -1,9 +1,10 @@
 <?php
 
-require_once"sid/UserManager/UserManager.php";
+//require_once"sid/UserManager/UserManager.php";
+require_once('../vendor/autoload.php');
 
 
-$userM =  new UserManager(new PDO("mysql:host=localhost;dbname=users", "root", ""));
+$userM =  new sid\UserManager\UserManager(new PDO("mysql:host=localhost;dbname=users", "root", ""));
 if(isset($_GET['do'])){
     $action=$_GET['do'];
     switch($action){
